@@ -1,0 +1,88 @@
+LISTA 2 - Condicional
+
+1)
+	var ano = 2015
+	if ano % 4 == 0 {
+		println("ano bissexto!")
+	}else{
+		if ano % 100 == 0 && ano % 400 == 0 {
+			println("Ano bissexto!")
+		}
+	}println("Ano não bissexto!") 
+
+2)
+	var numeroAleatorio = arc4random()
+	if numeroAleatorio % 2 == 0{
+		println("cara!")
+	}else{
+		println("coroa!")
+	}
+
+3)	
+	var numero = 70
+	if numero % 3 == 0 && numero % 5 == 0{
+		if numero % 7 == 0{
+			println("Divisivel!")
+		}
+	}else{
+		println("Não divisivel!")
+	}
+
+-----------------------------------------------------------
+
+1)	
+	var n = 10
+	for n in 1..n{
+		println(n*n)
+	}
+
+2)	
+	var n = 10
+	var esquerda = 1
+	var direita = n
+
+	while esquerda < direita {
+		println(esquerda)
+		println(direita)
+		++esquerda
+		--direita
+	}
+	
+	if esquerda == direita {
+		println(esquerda)
+	}
+
+3)	
+	var n = 5
+
+	for i in 1...n{
+		for j in 1...n{
+			println("*")
+		}
+	}
+
+4)
+	let n = 4
+		
+	for i in 1..< n {
+		for j in 1..<n {
+			if i == j && (i+j)=n+1 {
+				println(" ")
+			}else{	
+				println("*")
+			}
+		}
+	}
+
+11)
+	var N = 10
+
+	var a = 1
+	var b = 0
+
+	for _ in 1...N {		
+		println(a)
+    		var tmp = a + b
+    		b = a
+    		a = tmp
+	}
